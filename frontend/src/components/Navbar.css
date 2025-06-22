@@ -1,0 +1,38 @@
+
+/* Navbar.css */
+.navbar .nav-link {
+  color: #111;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50%;
+}
+
+.navbar .nav-link-item{
+  padding: 0 2rem;
+  text-decoration: none;
+}
+
+ 
+ 
+.btn-signin{
+  background-color: #6c63ff;
+  color: #eeeaff;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.btn-signup{
+  background-color: #eeebfa;
+  color: #6c63ff;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  font-weight: 800;
+  border: none;
+  text-decoration: none;
+}
+
