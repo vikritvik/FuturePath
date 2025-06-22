@@ -14,7 +14,7 @@ export default function SignInPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://your-backend-url/api/signin", form);
+      const res = await axios.post("https://futurepath-backend.onrender.com/api/signin", form);
       localStorage.setItem("token", res.data.token);
       navigate("/dashboard"); // or any protected route
     } catch (err) {

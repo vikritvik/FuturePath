@@ -17,7 +17,7 @@ export default function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://your-backend-url/api/signup", form);
+      await axios.post("https://futurepath-backend.onrender.com/api/signup", form);
       navigate("/signin");
     } catch (err) {
       setError(err.response?.data?.message || "Signup failed");
