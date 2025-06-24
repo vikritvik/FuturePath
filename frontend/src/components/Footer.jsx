@@ -7,6 +7,7 @@ import {
   FaPhoneAlt,
   FaFolderOpen,
 } from "react-icons/fa";
+import "./Footer.css"
 
 export default function Footer() {
   return (
@@ -22,10 +23,10 @@ export default function Footer() {
 
           {/* Column 1: Logo + Social */}
           <div className="col-12 col-md-3">
-            <h4 className="fw-bold">
+            <h4 className="fw-bold foot-head-rd">
               FuturePath<span style={{ color: "#5D5FEF" }}>●</span>
             </h4>
-            <div className="d-flex gap-3 mt-3">
+            <div className="d-flex gap-3 mt-3 social-links">
               <FaFacebookF size={20} />
               <FaTwitter size={20} />
               <FaInstagram size={20} />
@@ -33,9 +34,10 @@ export default function Footer() {
           </div>
 
           {/* Column 2: Links */}
-          <div className="col-6 col-md-2">
-            <h6 className="fw-bold">Links</h6>
-            <ul className="list-unstyled mt-2">
+        
+          <div className="col-5 col-md-2 footer-links">
+            <h4 className="fw-bold link-bt">Links</h4>
+            <ul className="list-unstyled mt-2 ">
               <li>Home</li>
               <li>Courses</li>
               <li>Mentor</li>
@@ -47,7 +49,7 @@ export default function Footer() {
 
           {/* Column 3: Other */}
           <div className="col-6 col-md-2">
-            <h6 className="fw-bold">Other</h6>
+            <h4 className="fw-bold other-links">Other</h4>
             <ul className="list-unstyled mt-2">
               <li>About Us</li>
               <li>Our Team</li>
@@ -56,9 +58,9 @@ export default function Footer() {
               <li>Contact</li>
             </ul>
           </div>
-
+          
           {/* Column 4: Contact */}
-          <div className="col-12 col-md-5">
+          <div className="col-12 col-md-5 adress-links">
             <ul className="list-unstyled mt-4 mt-md-0">
               <li className="mb-3 d-flex align-items-center">
                 <FaMapMarkerAlt className="me-2 text-primary" />

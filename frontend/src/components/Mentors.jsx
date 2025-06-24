@@ -21,7 +21,9 @@ export default function MentorSection() {
     <section
       style={{
         backgroundColor: "#d9f0ff", // matches the blue in your image
-        padding: "60px 0",
+        padding: "60px 0px",
+        margin: "20px",
+        borderRadius: "10px",
         textAlign: "center",
       }}
     >
@@ -29,7 +31,7 @@ export default function MentorSection() {
         <h2 className="fw-bold mb-5">Meet with our mentor.</h2>
         <div className="row justify-content-center">
           {mentors.map((mentor, index) => (
-            <div className="col-12 col-sm-6 col-md-4 mb-5" key={index}>
+            <div className="col-12 col-sm-6 col-md-4 mb-5 my-md-5 " key={index}>
               <div style={{ position: "relative", display: "inline-block" }}>
                 <img
                   src={mentor.image}

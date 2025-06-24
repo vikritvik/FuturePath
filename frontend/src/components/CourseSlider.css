@@ -1,0 +1,19 @@
+
+@media (max-width: 576px){
+    .card-title{
+        padding: 0 25px;
+        margin: 0;
+
+    }
+    .text-muted-dh{
+        margin: 5px 80px;
+        padding: 0 20px;  
+    }
+    .text-muted-dd{
+        margin: 0 70px;
+    }
+    .text-span{
+        margin: 0;
+        padding: 0;
+    }
+}

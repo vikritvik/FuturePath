@@ -5,37 +5,41 @@ import { FaStar } from "react-icons/fa";
 import { BsBook, BsPeople } from "react-icons/bs";
 import "swiper/css";
 import "swiper/css/pagination";
+import "./CourseSlider.css"
 
 const courses = [
     {
-        title: "Design banner with Figma",
-        author: "Colt stelle",
+        title: "Coding for kids",
+        author: "Vikas Ritvik",
+        Mode: "Online live class",
         rating: 5,
-        price: "$20",
+        price: "5000Rs",
         students: 120,
-        classes: 12,
+        classes: 25,
         image: "/images/courseone.png", // replace with actual path
         bestSeller: true,
     },
 
     {
-        title: "We Launch Delia Webflow this Week!",
-        author: "Colt stelle",
+        title: "German language classes",
+        author: "Sonia James",
+        Mode: "Online live class",
         rating: 5,
-        price: "$20",
+        price: "10,000Rs per level",
         students: 150,
-        classes: 12,
-        image: "/images/coursethree.png",
+        classes: 40,
+        image: "/images/german.jpg",
         bestSeller: true,
-    }, 
+    },
     {
-        title: "We Launch Delia Webflow this Week!",
-        author: "Colt stelle",
+        title: "Master Chatgpt & Gemini",
+        author: "Vikas Ritvik",
+        Mode: "Online live class",
         rating: 5,
-        price: "$20",
+        price: "2000Rs",
         students: 150,
-        classes: 12,
-        image: "/images/coursethree.png",
+        classes: 10,
+        image: "/images/chatgpt1.jpg",
         bestSeller: true,
     },
     // Add more courses as needed
@@ -43,10 +47,10 @@ const courses = [
 
 export default function CourseSlider() {
     return (
-        <div className="container py-5">
+        <div className="container py-5 ">
             <header className="text-center mb-5">
-        <h1 className="display-4 fw-bold">Our Courses</h1>
-      </header>
+                <h1 className="display-4 fw-bold">Our Courses</h1>
+            </header>
 
             <Swiper
                 spaceBetween={20}
@@ -72,25 +76,26 @@ export default function CourseSlider() {
                                     </span>
                                 )}
                             </div>
-                            <div className="card-body py-5 ">
+                            <div className="card-body py-2 ">
                                 <h5 className="card-title fw-bold">{course.title}</h5>
-                                <p className="text-muted">{course.author}</p>
+                                <p className="text-muted-dh">{course.author}</p>
+                                <h5 className="text-muted-dd">{course.Mode}</h5>
                                 <div className="py-5 my-5">
-                                <div className="d-flex align-items-center">
-                                    <span className="text-danger fw-bold me-2">{course.rating}</span>
-                                    {Array(5).fill().map((_, i) => (
-                                        <FaStar key={i} className="text-warning me-1" />
-                                    ))}
-                                    <span className="ms-auto fw-bold">{course.price}</span>
-                                </div>
-                                <div className="d-flex text-muted justify-content-between mt-2 pt-2 border-top">
-                                    <span><BsBook className="me-1" /> {course.classes} classes</span>
-                                    <span><BsPeople className="me-1" /> {course.students} students</span>
-                                </div>
+                                    <div className="d-flex align-items-center">
+                                        <span className="text-danger fw-bold me-2 text-span">{course.rating}</span>
+                                        {Array(5).fill().map((_, i) => (
+                                            <FaStar key={i} className="text-warning me-1" />
+                                        ))}
+                                        <span className="ms-auto fw-bold fs-md-2 fs-5">{course.price}</span>
+                                    </div>
+                                    <div className="d-flex text-muted justify-content-between mt-2 pt-2 border-top">
+                                        <span><BsBook className="me-1" /> {course.classes} classes</span>
+                                        <span><BsPeople className="me-1" /> {course.students} students</span>
+                                    </div>
                                 </div>
                             </div>
-                            
-                             
+
+
                         </div>
                     </SwiperSlide>
                 ))}
