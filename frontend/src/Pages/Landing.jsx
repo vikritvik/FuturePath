@@ -62,7 +62,7 @@ const Landingpage = () => {
             </div>
           </div>
         </Col>
-        <Col xs={12} md={6} className="text-center mb-3 mb-md-0">
+        <Col xs={12} md={6} className="text-center mb-sm-0 mb-md-0">
           <img
             src="/Images/Vrheader.png"
             alt="Learning"
