@@ -1,0 +1,21 @@
+
+.feature-icon {
+  color: #00BFFF;
+  font-size: 24px;
+}
+
+.feature-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Adjust for small screens */
+@media (max-width: 576px) {
+  .feature-icon {
+    font-size: 18px;
+  }
+
+  .feature-text {
+    font-size: 14px;
+  }
+}

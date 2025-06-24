@@ -1,12 +1,13 @@
 
- 
+
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FiSearch } from 'react-icons/fi';
 import { Bs1CircleFill, Bs1SquareFill, BsCheckCircle } from 'react-icons/bs';
 import CourseSlider from '../components/CourseSlider';
 import MentorSection from '../components/Mentors';
- 
+import  './Landing.css'
+
 
 
 const Landingpage = () => {
@@ -41,38 +42,36 @@ const Landingpage = () => {
               </button>
             </div>
           </div>
-
-          <div className="row text-center justify-content-center">
+          <div className="row text-center justify-content-center mb-3 pb-3">
             {/* Feature 1 */}
-            <div className="col-12 col-md-4 mb-4 mb-md-0 d-flex align-items-center justify-content-center gap-2">
-              <BsCheckCircle color="#00BFFF" size={24} />
-              <span className="fw-medium fs-5">Flexible</span>
+            <div className="col-4 d-flex align-items-center justify-content-center gap-2 feature-item">
+              <BsCheckCircle className="feature-icon" />
+              <span className="feature-text">Flexible</span>
             </div>
 
             {/* Feature 2 */}
-            <div className="col-12 col-md-4 mb-4 mb-md-0 d-flex align-items-center justify-content-center gap-2">
-              <BsCheckCircle color="#00BFFF" size={24} />
-              <span className="fw-medium fs-5">Learning path</span>
+            <div className="col-4 d-flex align-items-center justify-content-center gap-2 feature-item">
+              <BsCheckCircle className="feature-icon" />
+              <span className="feature-text">Learning path</span>
             </div>
 
             {/* Feature 3 */}
-            <div className="col-12 col-md-4 d-flex align-items-center justify-content-center gap-2">
-              <BsCheckCircle color="#00BFFF" size={24} />
-              <span className="fw-medium fs-5">Community</span>
+            <div className="col-4 d-flex align-items-center justify-content-center gap-2 feature-item">
+              <BsCheckCircle className="feature-icon" />
+              <span className="feature-text">Community</span>
             </div>
           </div>
-
         </Col>
         <Col md={6} className="text-center">
-          <img src="/Images/Vrheader.png" alt="Learning" className="img-fluid rounded" width={500}/>
+          <img src="/Images/Vrheader.png" alt="Learning" className="img-fluid rounded" width={500} />
         </Col>
       </Row>
 
-      
+
       <CourseSlider></CourseSlider>
       <MentorSection></MentorSection>
-    </Container>
-   
+    </Container >
+
   );
 };
 
