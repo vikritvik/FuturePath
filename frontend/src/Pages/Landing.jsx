@@ -19,7 +19,7 @@ const Landingpage = () => {
             <BsCheckCircle color='green' size={24} className='my-2 mx-2'></BsCheckCircle>
             <span className='fs-5 heading-text'>Best learning method proved</span>
             <h1 className='fw-bold'>Learn Concepts in VR </h1>
-            <p className='md-h4 py-2 fs-text'>More Immersive and Modern way of Learning.</p>
+            <p className='md-h4 py-2 fs-text'>A Modern way of Learning.</p>
           </div>
           <div className="d-flex py-4">
             <div className="input-group search-input">
