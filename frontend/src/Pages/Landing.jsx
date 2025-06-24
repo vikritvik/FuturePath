@@ -13,11 +13,11 @@ import './Landing.css'
 const Landingpage = () => {
   return (
     <Container className="p-4  p-md-0">
-      <Row className='py-3 py-md-5 my-md-2'>
+      <Row className='py-3 py-md-5 my-md-2'> 
         <Col md={6} className='px-4'>
           <div className='heading-text'>
             <BsCheckCircle color='green' size={24} className='my-2 mx-2'></BsCheckCircle>
-            <span className='fs-5'>Best learning method proved</span>
+            <span className='fs-5 heading-text'>Best learning method proved</span>
             <h1 className='fw-bold'>Learn Concepts in VR </h1>
             <p className='md-h4 py-2 fs-text'>More Immersive and Modern way of Learning.</p>
           </div>
