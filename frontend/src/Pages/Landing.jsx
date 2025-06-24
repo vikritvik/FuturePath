@@ -6,7 +6,7 @@ import { FiSearch } from 'react-icons/fi';
 import { Bs1CircleFill, Bs1SquareFill, BsCheckCircle } from 'react-icons/bs';
 import CourseSlider from '../components/CourseSlider';
 import MentorSection from '../components/Mentors';
-import  './Landing.css'
+import './Landing.css'
 
 
 
@@ -62,9 +62,15 @@ const Landingpage = () => {
             </div>
           </div>
         </Col>
-        <Col md={6} className="text-center">
-          <img src="/Images/Vrheader.png" alt="Learning" className="img-fluid rounded" width={500} />
+        <Col xs={12} md={6} className="text-center mb-3 mb-md-0">
+          <img
+            src="/Images/Vrheader.png"
+            alt="Learning"
+            className="img-fluid rounded"
+            width={500}
+          />
         </Col>
+
       </Row>
 
 
